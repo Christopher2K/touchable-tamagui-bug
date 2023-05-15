@@ -66,6 +66,7 @@
     "kitchen-sink:extract": "yarn workspace @tamagui/kitchen-sink start:extract",
     "kitchen-sink:clean": "yarn workspace @tamagui/kitchen-sink start:clean",
     "kitchen-sink:android": "yarn workspace @tamagui/kitchen-sink start:android",
+    "kitchen-sink:ios": "yarn workspace @tamagui/kitchen-sink start:ios",
     "kitchen-sink:web": "yarn workspace @tamagui/kitchen-sink web",
     "sandbox": "yarn workspace @tamagui/sandbox dev",
     "sandbox:vite": "yarn workspace @tamagui/sandbox dev:vite",

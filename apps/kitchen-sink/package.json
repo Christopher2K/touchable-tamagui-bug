@@ -8,6 +8,7 @@
     "start:extract": "TAMAGUI_ENABLE_DYNAMIC_LOAD=1 TAMAGUI_TARGET=native yarn start",
     "dev": "tama dev",
     "start:android": "yarn start --android",
+    "start:ios": "yarn start --ios",
     "start:clean": "watchman watch-del-all & rm -r $TMPDIR/metro-cache & yarn start -c",
     "android": "EXPO_NO_TELEMETRY=true TAMAGUI_TARGET=native yarn expo run:android",
     "ios": "EXPO_NO_TELEMETRY=true TAMAGUI_TARGET=native yarn expo run:ios",

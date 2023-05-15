@@ -3,7 +3,7 @@ import { SelectDemo } from '@tamagui/demos'
 import { ChevronRight, Moon, Sun } from '@tamagui/lucide-icons'
 import { setupNativeSheet } from '@tamagui/sheet'
 import { memo } from 'react'
-import { ScrollView } from 'react-native'
+import { ScrollView, Text, TouchableOpacity } from 'react-native'
 import { ModalView } from 'react-native-ios-modal'
 import { UseLinkProps, useLink } from 'solito/link'
 import {
@@ -23,6 +23,10 @@ import {
 
 import { useThemeControl } from '../../useKitchenSinkTheme'
 
+const CustomTouchableOpacity = styled(TouchableOpacity, {
+  bg: 'green'
+})
+
 setupNativeSheet('ios', ModalView)
 
 const SubComponent = memo(() => {
@@ -41,6 +45,10 @@ export function HomeScreen() {
         <H1 fontFamily="$heading" size="$9">
           Kitchen Sink
         </H1>
+
+        <CustomTouchableOpacity onPress={() => console.log('HEY')}>
+          <Text>THIS IS MY TOUCHABLE</Text>
+        </CustomTouchableOpacity>
 
         <Button
           onPress={() => {
